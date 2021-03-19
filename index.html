@@ -1,180 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>にじさんじのデビュー時期と引退時期</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
-    />
 
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script type="text/javascript">
-      // グラフ設定の読み込み
-      google.charts.load("current", { packages: ["timeline"] });
-      // グラフ関数をセット
-      google.charts.setOnLoadCallback(drawChart);
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>にじさんじのデビュー時期と引退時期</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
-      // グラフ関数設定
-      function drawChart() {
-        var container = document.getElementById("timeline");
-        var chart = new google.visualization.Timeline(container);
-        var dataTable = new google.visualization.DataTable();
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    // グラフ設定の読み込み
+    google.charts.load("current", { packages: ["timeline"] });
+    // グラフ関数をセット
+    google.charts.setOnLoadCallback(drawChart);
 
-        dataTable.addColumn({ type: "string", id: "VTuber" });
-        dataTable.addColumn({ type: "date", id: "Start" });
-        dataTable.addColumn({ type: "date", id: "End" });
-        dataTable.addRows([
-          ["月ノ美兎", new Date(2018, 2, 8), new Date()],
-          ["勇気ちひろ", new Date(2018, 2, 8), new Date()],
-          ["える", new Date(2018, 2, 8), new Date()],
-          ["樋口楓", new Date(2018, 2, 8), new Date()],
-          ["静凛", new Date(2018, 2, 8), new Date()],
-          ["渋谷ハジメ", new Date(2018, 2, 8), new Date()],
-          ["鈴谷アキ", new Date(2018, 2, 8), new Date()],
-          ["モイラ", new Date(2018, 2, 8), new Date()],
-          ["鈴鹿詩子", new Date(2018, 3, 15), new Date()],
-          ["宇志海いちご", new Date(2018, 3, 15), new Date()],
-          ["家長むぎ", new Date(2018, 3, 15), new Date()],
-          ["夕陽リリ", new Date(2018, 3, 15), new Date()],
-          ["物述有栖", new Date(2018, 3, 15), new Date()],
-          ["文野環", new Date(2018, 3, 15), new Date()],
-          ["伏見ガク", new Date(2018, 3, 15), new Date()],
-          ["ギルザレンIII世", new Date(2018, 3, 15), new Date()],
-          ["剣持刀也", new Date(2018, 3, 15), new Date()],
-          ["森中花咲", new Date(2018, 3, 15), new Date()],
-          ["叶", new Date(2018, 5, 2), new Date()],
-          ["赤羽葉子", new Date(2018, 5, 2), new Date()],
-          ["笹木咲", new Date(2018, 7, 6), new Date()],
-          ["本間ひまわり", new Date(2018, 7, 6), new Date()],
-          ["闇夜乃モルル", new Date(2018, 7, 6), new Date(2019, 6, 27)],
-          ["魔界ノりりむ", new Date(2018, 7, 30), new Date()],
-          ["葛葉", new Date(2018, 7, 30), new Date()],
-          ["椎名唯華", new Date(2018, 7, 30), new Date()],
-          ["雪汝", new Date(2018, 7, 30), new Date(2019, 10, 30)],
-          ["ドーラ", new Date(2018, 6, 3), new Date()],
-          ["轟京子", new Date(2018, 6, 3), new Date()],
-          ["シスター・クレア", new Date(2018, 6, 3), new Date()],
-          ["花畑チャイカ", new Date(2018, 6, 3), new Date()],
-          ["社築", new Date(2018, 6, 3), new Date()],
-          ["安土桃", new Date(2018, 6, 3), new Date()],
-          ["卯月コウ", new Date(2018, 6, 3), new Date()],
-          ["鈴木勝", new Date(2018, 6, 3), new Date()],
-          ["緑仙", new Date(2018, 6, 3), new Date()],
-          ["海夜叉神", new Date(2018, 6, 3), new Date(2019, 4, 9)],
-          ["八朔ゆず", new Date(2018, 6, 3), new Date(2019, 5, 7)],
-          ["名伽尾アズマ", new Date(2018, 6, 2), new Date(2019, 5, 31)],
-          ["出雲霞", new Date(2018, 6, 3), new Date(2020, 10, 31)],
-          ["神田笑一", new Date(2018, 8, 9), new Date()],
-          ["飛鳥ひな", new Date(2018, 8, 9), new Date()],
-          ["雨森小夜", new Date(2018, 8, 9), new Date()],
-          ["鷹宮リオン", new Date(2018, 8, 9), new Date()],
-          ["舞元啓介", new Date(2018, 8, 9), new Date()],
-          ["鳴門こがね", new Date(2018, 8, 9), new Date(2018, 8, 31)],
-          ["春崎エアル", new Date(2018, 6, 8), new Date()],
-          ["竜胆尊", new Date(2018, 8, 31), new Date()],
-          ["でびでび・でびる", new Date(2018, 8, 31), new Date()],
-          ["桜凛月", new Date(2018, 8, 31), new Date()],
-          ["町田ちま", new Date(2018, 8, 31), new Date()],
-          ["ジョー・力一", new Date(2018, 8, 31), new Date()],
-          ["月見しずく", new Date(2018, 8, 31), new Date(2020, 1, 13)],
-          ["遠北千南", new Date(2018, 8, 31), new Date(2020, 3, 31)],
-          ["ベルモンド・バンデラス", new Date(2018, 9, 25), new Date()],
-          ["矢車りね", new Date(2018, 9, 25), new Date()],
-          ["夢追翔", new Date(2018, 9, 25), new Date()],
-          ["黒井しば", new Date(2018, 9, 25), new Date()],
-          ["成瀬鳴", new Date(2018, 6, 8), new Date()],
-          ["黒羽黒兎", new Date(2018, 6, 8), new Date(2018, 6, 30)],
-          ["神成ポアロ", new Date(2018, 6, 8), new Date(2018, 6, 30)],
-          ["童田明治", new Date(2019, 1, 8), new Date()],
-          ["久遠千歳", new Date(2019, 1, 8), new Date(2019, 8, 31)],
-          ["郡道美玲", new Date(2019, 1, 17), new Date()],
-          ["夢月ロア", new Date(2019, 1, 17), new Date()],
-          ["小野町春香", new Date(2019, 1, 28), new Date()],
-          ["語部紡", new Date(2019, 1, 28), new Date()],
-          ["瀬戸美夜子", new Date(2019, 1, 28), new Date()],
-          ["御伽原江良", new Date(2019, 3, 8), new Date(2021, 3, 10)],
-          ["真堂雷斗", new Date(2019, 3, 8), new Date(2019, 3, 12)],
-          ["戌亥とこ", new Date(2019, 3, 22), new Date()],
-          ["アンジュ・カトリーナ", new Date(2019, 3, 22), new Date()],
-          ["リゼ・ヘルエスタ", new Date(2019, 3, 22), new Date()],
-          ["三枝明那", new Date(2019, 4, 2), new Date()],
-          ["愛園愛美", new Date(2019, 4, 2), new Date()],
-          ["鈴原るる", new Date(2019, 4, 29), new Date()],
-          ["雪城眞尋", new Date(2019, 4, 29), new Date()],
-          ["エクス・アルビオ", new Date(2019, 5, 17), new Date()],
-          ["レヴィ・エリファ", new Date(2019, 5, 17), new Date()],
-          ["葉山舞鈴", new Date(2019, 6, 19), new Date()],
-          ["ニュイ・ソシエール", new Date(2019, 6, 19), new Date()],
-          ["葉加瀬冬雪", new Date(2019, 7, 3), new Date()],
-          ["加賀美ハヤト", new Date(2019, 7, 3), new Date()],
-          ["夜見れな", new Date(2019, 7, 3), new Date()],
-          ["黛灰", new Date(2019, 7, 24), new Date()],
-          ["アルス・アルマル", new Date(2019, 7, 24), new Date()],
-          ["相羽ういは", new Date(2019, 7, 24), new Date()],
-          ["天宮こころ", new Date(2019, 8, 8), new Date()],
-          ["エリー・コニファー", new Date(2019, 8, 8), new Date()],
-          ["ラトナ・プティ", new Date(2019, 8, 8), new Date()],
-          ["早瀬走", new Date(2019, 9, 19), new Date()],
-          ["健屋花那", new Date(2019, 9, 19), new Date()],
-          ["シェリン・バーガンディ", new Date(2019, 9, 19), new Date()],
-          ["フミ", new Date(2019, 10, 17), new Date()],
-          ["星川サラ", new Date(2019, 10, 17), new Date()],
-          ["山神カルタ", new Date(2019, 10, 17), new Date()],
-          ["えま★おうがすと", new Date(2019, 10, 31), new Date()],
-          ["ルイス・キャミー", new Date(2019, 10, 31), new Date()],
-          ["魔使マオ", new Date(2019, 10, 31), new Date()],
-          ["不破湊", new Date(2019, 11, 28), new Date()],
-          ["白雪巴", new Date(2019, 11, 28), new Date()],
-          ["グウェル・オス・ガール", new Date(2019, 11, 28), new Date()],
-          ["来栖夏芽", new Date(2019, 12, 26), new Date()],
-          ["奈羅花", new Date(2019, 12, 26), new Date()],
-          ["ましろ", new Date(2019, 12, 26), new Date()],
-          ["フレン・E・ルスタリオ", new Date(2020, 1, 30), new Date()],
-          ["メリッサ・キンレンカ", new Date(2020, 1, 30), new Date()],
-          ["イブラヒム", new Date(2020, 1, 30), new Date()],
-          ["長尾景", new Date(2020, 4, 2), new Date()],
-          ["弦月藤士郎", new Date(2020, 4, 2), new Date()],
-          ["甲斐田晴", new Date(2020, 4, 2), new Date()],
-          ["空星きらめ", new Date(2020, 6, 30), new Date()],
-          ["金魚坂めいろ", new Date(2020, 6, 30), new Date(2020, 10, 19)],
-          ["朝日南アカネ", new Date(2020, 8, 6), new Date()],
-          ["周央サンゴ", new Date(2020, 8, 6), new Date()],
-          ["東堂コハク", new Date(2020, 8, 6), new Date()],
-          ["北小路ヒスイ", new Date(2020, 8, 6), new Date()],
-          ["西園チグサ", new Date(2020, 8, 6), new Date()],
-        ]);
+    // グラフ関数設定
+    function drawChart() {
+      var container = document.getElementById("timeline");
+      var chart = new google.visualization.Timeline(container);
+      var dataTable = new google.visualization.DataTable();
 
-        // グラフ描画実行
-        chart.draw(dataTable);
-      }
-    </script>
-  </head>
+      dataTable.addColumn({ type: "string", id: "Group" });
+      dataTable.addColumn({ type: "string", id: "VTuber" });
+      dataTable.addColumn({ type: "date", id: "Start" });
+      dataTable.addColumn({ type: "date", id: "End" });
+      dataTable.addRows([
+        ['月ノ美兎', '1期生', new Date(2018, 2, 8), new Date()],
+        ['勇気ちひろ', '1期生', new Date(2018, 2, 8), new Date()],
+        ['える', '1期生', new Date(2018, 2, 8), new Date()],
+        ['樋口楓', '1期生', new Date(2018, 2, 8), new Date()],
+        ['静凛', '1期生', new Date(2018, 2, 8), new Date()],
+        ['渋谷ハジメ', '1期生', new Date(2018, 2, 8), new Date()],
+        ['鈴谷アキ', '1期生', new Date(2018, 2, 8), new Date()],
+        ['モイラ', '1期生', new Date(2018, 2, 8), new Date()],
+        ['鈴鹿詩子', '2期生', new Date(2018, 3, 15), new Date()],
+        ['宇志海いちご', '2期生', new Date(2018, 3, 15), new Date()],
+        ['家長むぎ', '2期生', new Date(2018, 3, 15), new Date()],
+        ['夕陽リリ', '2期生', new Date(2018, 3, 15), new Date()],
+        ['物述有栖', '2期生', new Date(2018, 3, 15), new Date()],
+        ['文野環', '2期生', new Date(2018, 3, 15), new Date()],
+        ['伏見ガク', '2期生', new Date(2018, 3, 15), new Date()],
+        ['ギルザレンIII世', '2期生', new Date(2018, 3, 15), new Date()],
+        ['剣持刀也', '2期生', new Date(2018, 3, 15), new Date()],
+        ['森中花咲', '2期生', new Date(2018, 3, 15), new Date()],
+        ['叶', 'ゲーマーズ', new Date(2018, 5, 2), new Date()],
+        ['赤羽葉子', 'ゲーマーズ', new Date(2018, 5, 2), new Date()],
+        ['笹木咲', 'ゲーマーズ', new Date(2018, 7, 6), new Date(2018, 11, 15)],
+        ['笹木咲', 'ゲーマーズ', new Date(2019, 1, 16), new Date()],
+        ['本間ひまわり', 'ゲーマーズ', new Date(2018, 7, 6), new Date()],
+        ['闇夜乃モルル', 'ゲーマーズ', new Date(2018, 7, 6), new Date(2019, 6, 27)],
+        ['魔界ノりりむ', 'ゲーマーズ', new Date(2018, 7, 30), new Date()],
+        ['葛葉', 'ゲーマーズ', new Date(2018, 7, 30), new Date()],
+        ['椎名唯華', 'ゲーマーズ', new Date(2018, 7, 30), new Date()],
+        ['雪汝', 'ゲーマーズ', new Date(2018, 7, 30), new Date(2019, 10, 30)],
+        ['ドーラ', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['轟京子', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['シスター・クレア', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['花畑チャイカ', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['社築', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['安土桃', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['卯月コウ', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['鈴木勝', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['緑仙', 'SEEDs1期生', new Date(2018, 6, 3), new Date()],
+        ['海夜叉神', 'SEEDs1期生', new Date(2018, 6, 3), new Date(2019, 4, 9)],
+        ['八朔ゆず', 'SEEDs1期生', new Date(2018, 6, 3), new Date(2019, 5, 7)],
+        ['名伽尾アズマ', 'SEEDs1期生', new Date(2018, 6, 2), new Date(2019, 5, 31)],
+        ['出雲霞', 'SEEDs1期生', new Date(2018, 6, 3), new Date(2020, 10, 31)],
+        ['春崎エアル', 'VOIZ', new Date(2018, 6, 8), new Date(2018, 8, 9)],
+        ['成瀬鳴', 'VOIZ', new Date(2018, 6, 8), new Date(2018, 8, 9)],
+        ['黒羽黒兎', 'VOIZ', new Date(2018, 6, 8), new Date(2018, 6, 30)],
+        ['神成ポアロ', 'VOIZ', new Date(2018, 6, 8), new Date(2018, 6, 30)],
+        ['春崎エアル', '無所属', new Date(2018, 8, 9), new Date(2018, 9, 25)],
+        ['成瀬鳴', '無所属', new Date(2018, 8, 9), new Date(2018, 9, 25)],
+        ['神田笑一', 'SEEDs2期生', new Date(2018, 8, 9), new Date()],
+        ['飛鳥ひな', 'SEEDs2期生', new Date(2018, 8, 9), new Date()],
+        ['雨森小夜', 'SEEDs2期生', new Date(2018, 8, 9), new Date()],
+        ['鷹宮リオン', 'SEEDs2期生', new Date(2018, 8, 9), new Date()],
+        ['舞元啓介', 'SEEDs2期生', new Date(2018, 8, 9), new Date()],
+        ['鳴門こがね', 'SEEDs2期生', new Date(2018, 8, 9), new Date(2018, 8, 31)],
+        ['春崎エアル', 'SEEDs2期生', new Date(2018, 9, 25), new Date()],
+        ['竜胆尊', 'SEEDs2期生', new Date(2018, 8, 31), new Date()],
+        ['でびでび・でびる', 'SEEDs2期生', new Date(2018, 8, 31), new Date()],
+        ['桜凛月', 'SEEDs2期生', new Date(2018, 8, 31), new Date()],
+        ['町田ちま', 'SEEDs2期生', new Date(2018, 8, 31), new Date()],
+        ['ジョー・力一', 'SEEDs2期生', new Date(2018, 8, 31), new Date()],
+        ['月見しずく', 'SEEDs2期生', new Date(2018, 8, 31), new Date(2020, 1, 13)],
+        ['遠北千南', 'SEEDs2期生', new Date(2018, 8, 31), new Date(2020, 3, 31)],
+        ['ベルモンド・バンデラス', 'SEEDs2期生', new Date(2018, 9, 25), new Date()],
+        ['矢車りね', 'SEEDs2期生', new Date(2018, 9, 25), new Date()],
+        ['夢追翔', 'SEEDs2期生', new Date(2018, 9, 25), new Date()],
+        ['黒井しば', 'SEEDs2期生', new Date(2018, 9, 25), new Date()],
+        ['成瀬鳴', 'SEEDs2期生', new Date(2018, 9, 25), new Date()],
+        ['童田明治', '2019年1～3月', new Date(2019, 1, 8), new Date()],
+        ['久遠千歳', '2019年1～3月', new Date(2019, 1, 8), new Date(2019, 8, 31)],
+        ['郡道美玲', '2019年1～3月', new Date(2019, 1, 17), new Date()],
+        ['夢月ロア', '2019年1～3月', new Date(2019, 1, 17), new Date()],
+        ['小野町春香', '2019年1～3月', new Date(2019, 1, 28), new Date()],
+        ['語部紡', '2019年1～3月', new Date(2019, 1, 28), new Date()],
+        ['瀬戸美夜子', '2019年1～3月', new Date(2019, 1, 28), new Date()],
+        ['御伽原江良', '2019年1～3月', new Date(2019, 3, 8), new Date(2021, 3, 10)],
+        ['真堂雷斗', '2019年1～3月', new Date(2019, 3, 8), new Date(2019, 3, 12)],
+        ['戌亥とこ', '2019年1～3月', new Date(2019, 3, 22), new Date()],
+        ['アンジュ・カトリーナ', '2019年1～3月', new Date(2019, 3, 22), new Date()],
+        ['リゼ・ヘルエスタ', '2019年1～3月', new Date(2019, 3, 22), new Date()],
+        ['三枝明那', '2019年4～6月', new Date(2019, 4, 2), new Date()],
+        ['愛園愛美', '2019年4～6月', new Date(2019, 4, 2), new Date()],
+        ['鈴原るる', '2019年4～6月', new Date(2019, 4, 29), new Date()],
+        ['雪城眞尋', '2019年4～6月', new Date(2019, 4, 29), new Date()],
+        ['エクス・アルビオ', '2019年4～6月', new Date(2019, 5, 17), new Date()],
+        ['レヴィ・エリファ', '2019年4～6月', new Date(2019, 5, 17), new Date()],
+        ['葉山舞鈴', '2019年4～6月', new Date(2019, 6, 19), new Date()],
+        ['ニュイ・ソシエール', '2019年4～6月', new Date(2019, 6, 19), new Date()],
+        ['葉加瀬冬雪', '2019年7～9月', new Date(2019, 7, 3), new Date()],
+        ['加賀美ハヤト', '2019年7～9月', new Date(2019, 7, 3), new Date()],
+        ['夜見れな', '2019年7～9月', new Date(2019, 7, 3), new Date()],
+        ['黛灰', '2019年7～9月', new Date(2019, 7, 24), new Date()],
+        ['アルス・アルマル', '2019年7～9月', new Date(2019, 7, 24), new Date()],
+        ['相羽ういは', '2019年7～9月', new Date(2019, 7, 24), new Date()],
+        ['天宮こころ', '2019年7～9月', new Date(2019, 8, 8), new Date()],
+        ['エリー・コニファー', '2019年7～9月', new Date(2019, 8, 8), new Date()],
+        ['ラトナ・プティ', '2019年7～9月', new Date(2019, 8, 8), new Date()],
+        ['早瀬走', '2019年7～9月', new Date(2019, 9, 19), new Date()],
+        ['健屋花那', '2019年7～9月', new Date(2019, 9, 19), new Date()],
+        ['シェリン・バーガンディ', '2019年7～9月', new Date(2019, 9, 19), new Date()],
+        ['フミ', '2019年10～12月', new Date(2019, 10, 17), new Date()],
+        ['星川サラ', '2019年10～12月', new Date(2019, 10, 17), new Date()],
+        ['山神カルタ', '2019年10～12月', new Date(2019, 10, 17), new Date()],
+        ['えま★おうがすと', '2019年10～12月', new Date(2019, 10, 31), new Date()],
+        ['ルイス・キャミー', '2019年10～12月', new Date(2019, 10, 31), new Date()],
+        ['魔使マオ', '2019年10～12月', new Date(2019, 10, 31), new Date()],
+        ['不破湊', '2019年10～12月', new Date(2019, 11, 28), new Date()],
+        ['白雪巴', '2019年10～12月', new Date(2019, 11, 28), new Date()],
+        ['グウェル・オス・ガール', '2019年10～12月', new Date(2019, 11, 28), new Date()],
+        ['来栖夏芽', '2019年10～12月', new Date(2019, 12, 26), new Date()],
+        ['奈羅花', '2019年10～12月', new Date(2019, 12, 26), new Date()],
+        ['ましろ', '2019年10～12月', new Date(2019, 12, 26), new Date()],
+        ['フレン・E・ルスタリオ', '2020年', new Date(2020, 1, 30), new Date()],
+        ['メリッサ・キンレンカ', '2020年', new Date(2020, 1, 30), new Date()],
+        ['イブラヒム', '2020年', new Date(2020, 1, 30), new Date()],
+        ['長尾景', '2020年', new Date(2020, 4, 2), new Date()],
+        ['弦月藤士郎', '2020年', new Date(2020, 4, 2), new Date()],
+        ['甲斐田晴', '2020年', new Date(2020, 4, 2), new Date()],
+        ['空星きらめ', '2020年', new Date(2020, 6, 30), new Date()],
+        ['金魚坂めいろ', '2020年', new Date(2020, 6, 30), new Date(2020, 10, 19)],
+        ['朝日南アカネ', '2020年', new Date(2020, 8, 6), new Date()],
+        ['周央サンゴ', '2020年', new Date(2020, 8, 6), new Date()],
+        ['東堂コハク', '2020年', new Date(2020, 8, 6), new Date()],
+        ['北小路ヒスイ', '2020年', new Date(2020, 8, 6), new Date()],
+        ['西園チグサ', '2020年', new Date(2020, 8, 6), new Date()],
+      ]);
 
-  <body>
-    <section class="section">
-      <div class="container is-fluid">
-        <h1 class="title">にじさんじ国内ライバーの活動期間比較</h1>
+      // グラフ描画実行
+      chart.draw(dataTable);
+    }
+  </script>
+</head>
 
-        <div
-          id="timeline"
-          style="height: 75vh; margin: 0 auto"
-        ></div>
+<body>
+  <section class="section">
+    <div class="container is-fluid">
+      <h1 class="title">にじさんじ国内ライバーの活動期間比較</h1>
+      <div id="timeline" style="height: 70vh; margin: 0 auto"></div>
+      <p>参考：https://wikiwiki.jp/nijisanji/公式ライバー</p>
+    </div>
+    </div>
+  </section>
 
-          <p>誰が先輩後輩なのか分からなかったので作りました。</p>
-          <p>参考：https://wikiwiki.jp/nijisanji/公式ライバー</p>
-        </div>
-      </div>
-    </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>by <a href="https://github.com/big-mon/vtuber-timeline">BIGMON</a>.</p>
+    </div>
+  </footer>
+</body>
 
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>by <a href="https://github.com/big-mon/vtuber-timeline">BIGMON</a>.</p>
-      </div>
-    </footer>
-  </body>
 </html>
